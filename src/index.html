@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="cardWidget">
+    <div class="cardType">
+      <ul class="cardTypeList">
+        <li class="cardTypeListElement visa"></li>
+        <li class="cardTypeListElement masterCard"></li>
+        <li class="cardTypeListElement americanExpress"></li>
+      </ul>
+    </div>
+    <form class="cardForm" action="">
+      <label for="cardNumber">Enter the card number</label>
+      <input id="cardNumber" type="text">
+      <input type="submit" value="Validate">
+    </form>
+  </div>
+  <div id="validationResult" class="validationResult">
+    <div class="validationResult-content">
+      <span class="closeValidationResult">&times;</span>
+      <p class="validationResultText"></p>
+    </div>
+  </div>
+</body>
+
+</html>

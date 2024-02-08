@@ -4,14 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint . --fix",
     "test": "jest",
-    "coverage": "jest --coverage",
-    "preshow:coverage": "npm run coverage",
-    "show:coverage": "live-server coverage/lcov-report",
-    "preshow:dist": "npm run build"
+    "coverage": "jest --coverage"
   },
   "author": "LeaveThePast",
   "license": "MIT",
@@ -35,5 +31,8 @@
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.1",
     "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "puppeteer": "^22.0.0"
   }
 }
